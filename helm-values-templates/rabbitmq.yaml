@@ -3,7 +3,7 @@ image:
 
 ingress:
   enabled: true
-  host: rabbitmq.local
+  hostName: rabbitmq.local
 
 persistence:
   enabled: true
