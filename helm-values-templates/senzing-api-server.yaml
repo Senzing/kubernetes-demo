@@ -5,7 +5,8 @@ ingress:
   enabled: true
   hosts:
     - host: senzing-api.local
-      paths: ["/"]
+      paths:
+        - /
 
 senzing:
   bindAddr: all
