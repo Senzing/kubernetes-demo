@@ -1,6 +1,10 @@
 image:
   registry: ${DOCKER_REGISTRY_URL}
 
+ingress:
+  enabled: true
+  host: rabbitmq.local
+
 persistence:
   enabled: true
   existingClaim: rabbitmq-persistent-volume-claim

@@ -3,6 +3,7 @@ image:
 
 ingress:
   enabled: true
+  hostname: phppgadmin.local
 
 phppgadmin:
   serverHost: ${DEMO_PREFIX}-postgresql

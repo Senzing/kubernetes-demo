@@ -92,6 +92,14 @@ This repository assumes a working knowledge of:
     minikube start --cpus 4 --memory 8192 --disk-size=50g --vm-driver kvm2
     ```
 
+#### Ingress
+
+1. xxx
+
+    ```console
+    minikube addons enable ingress
+    ```
+
 #### Helm/Tiller
 
 1. [Install Helm](https://github.com/Senzing/knowledge-base/blob/master/HOWTO/install-helm.md) on your local workstation.
