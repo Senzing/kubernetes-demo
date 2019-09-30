@@ -1,6 +1,10 @@
 image:
   registry: ${DOCKER_REGISTRY_URL}
 
+ingress:
+  enabled: true
+  host: senzing-entity-search.local
+
 senzing:
   apiServerUrl: "http://${DEMO_PREFIX}-senzing-api-server:8080"
 
