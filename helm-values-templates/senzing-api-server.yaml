@@ -3,7 +3,8 @@ image:
 
 ingress:
   enabled: true
-  host: senzing-api.local
+  hosts:
+    - host: senzing-api.local
 
 senzing:
   bindAddr: all
