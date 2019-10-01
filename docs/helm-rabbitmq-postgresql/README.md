@@ -285,11 +285,13 @@ To use the Senzing code, you must agree to the End User License Agreement (EULA)
 ### Deploy Senzing RPM
 
 This deployment initializes the Persistent Volume with Senzing code and data.
+
+:thinking:
 There are two method available.
 The first method is simpler, but requires a root container.
 The second method can be done on kubernetes with a non-root container
 
-#### root container method
+#### Method #1 root container method
 
 1. Install chart.
    Example:
@@ -318,7 +320,7 @@ The second method can be done on kubernetes with a non-root container
     my-senzing-yum-8n2ql       0/1     Completed   0          2m44s
     ```
 
-#### Non-root container method
+#### Method #2 Non-root container method
 
 1. Install chart with non-root container.
    This pod will be the recipient of a `docker cp` command.
