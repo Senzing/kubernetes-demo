@@ -94,7 +94,8 @@ This repository assumes a working knowledge of:
 
 #### Ingress
 
-1. xxx
+1. Enable the ingress capability.
+   Example:
 
     ```console
     minikube addons enable ingress
@@ -222,7 +223,7 @@ To use the Senzing code, you must agree to the End User License Agreement (EULA)
     kubectl create -f ${KUBERNETES_DIR}/namespace.yaml
     ```
 
-1. Optional: Review namespaces.
+1. :thinking: **Optional:** Review namespaces.
 
     ```console
     kubectl get namespaces
@@ -248,7 +249,7 @@ To use the Senzing code, you must agree to the End User License Agreement (EULA)
     kubectl create -f ${KUBERNETES_DIR}/persistent-volume-claim-senzing.yaml
     ```
 
-1. Optional: Review persistent volumes and claims.
+1. :thinking: **Optional:** Review persistent volumes and claims.
 
     ```console
     kubectl get persistentvolumes \
@@ -273,7 +274,7 @@ To use the Senzing code, you must agree to the End User License Agreement (EULA)
     helm repo update
     ```
 
-1. Optional: Review repositories
+1. :thinking: **Optional:** Review repositories
 
     ```console
     helm repo list
