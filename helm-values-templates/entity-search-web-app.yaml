@@ -3,9 +3,10 @@ image:
 
 ingress:
   enabled: true
-#  hosts:
-#    - host: senzing-entity-search.local
-#      paths: []
+  hosts:
+    - host: senzing-entity-search.local
+      paths:
+        - /
 
 senzing:
   apiServerUrl: "http://${DEMO_PREFIX}-senzing-api-server:8080"
