@@ -615,6 +615,21 @@ The Senzing Entity Search WebApp is a light-weight WebApp demonstrating Senzing 
     export DEMO_NAMESPACE=${DEMO_PREFIX}-namespace
     ```
 
+#### View via ingress
+
+1. Backup `/etc/hosts`
+
+    ```console
+    sudo cp /etc/hosts /etc/hosts.$(date +%s)
+    ```
+
+1. Add `ingress` hostnames to `/etc/hosts`
+
+    ```console
+    echo "$(minikube ip) phppgadmin.local rabbitmq.local senzing-api.local senzing-entity-search.local" \
+      | sudo tee --append /etc/hosts
+    ```
+
 #### View Senzing Debug pod
 
 1. In a separate terminal window, log into debug pod.
