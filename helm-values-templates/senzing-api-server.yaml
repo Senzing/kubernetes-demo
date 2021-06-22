@@ -1,10 +1,13 @@
 image:
   registry: ${DOCKER_REGISTRY_URL}
 
+imagePullSecrets:
+  - name: ${DOCKER_REGISTRY_SECRET}
+
 ingress:
   enabled: true
   hosts:
-    - host: senzing-api.local
+    - host: senzing-entity-search.local
       paths:
         - /
 
